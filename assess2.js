@@ -14,7 +14,11 @@ function getAvailableBooks(books){
     let emptyArray=[];
     for ( i= 0; i < books.length; i++) {
         let x = books[i].emptyArray;
-        x.push(emptyArray)
+        if(i <= books[i]){
+            x.push(emptyArray)
+
+        }
+       
 }
 }
 console.log(getAvailableBooks());
